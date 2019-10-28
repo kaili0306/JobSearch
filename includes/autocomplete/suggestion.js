@@ -56,7 +56,7 @@ function suggestion(inp, arr) {
     });
 }
 
-var url = 'http://localhost/php_rest_jobSearch/api/city/read.php'
+var url = 'http://localhost/JobSearch/php_rest_jobSearch/api/city/read.php'
 fetch(url).then(response => {
     return response.json();
 }).then(data => {

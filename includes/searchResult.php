@@ -22,7 +22,7 @@
         }else
             name =newsearch[1]
 
-var url = 'http://localhost/php_rest_jobSearch/api/city/read_single.php?name='+ name
+var url = 'http://localhost/JobSearch/php_rest_jobSearch/api/city/read_single.php?name='+ name
 fetch(url).then(response => {
     return response.json();
 }).then(data => {
@@ -36,7 +36,7 @@ fetch(url).then(response => {
 })
 
 function getJobs (id){
-    var url = 'http://localhost/php_rest_jobSearch/api/job/read_city.php?city_id='+ id
+    var url = 'http://localhost/JobSearch/php_rest_jobSearch/api/job/read_city.php?city_id='+ id
     fetch(url).then(response=>{
         return response.json();
     }).then(data=>{
